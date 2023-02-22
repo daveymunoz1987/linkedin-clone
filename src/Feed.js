@@ -7,7 +7,7 @@ import EventNoteIcon from '@mui/icons-material/EventNote';
 import CalendarViewDayIcon from '@mui/icons-material/CalendarViewDay';
 import InputOption from './InputOption';
 import Post from './Post';
-import { db, app } from './Firebase';
+import { db } from './Firebase';
 import firebase from 'firebase/compat/app';
 import  'firebase/compat/firestore';
 
