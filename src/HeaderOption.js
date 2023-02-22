@@ -1,12 +1,12 @@
 import React from 'react';
 import "./HeaderOption.css";
-// import { Avatar } from "@mui/material";
+import { Avatar } from "@mui/material";
 
-function HeaderOption({  Icon, title}) {
+function HeaderOption({ avatar, Icon, title, onClick }) {
   return (
-    <div className="headerOption">
+    <div onClick={onClick} className="headerOption">
         {Icon && <Icon className='headerOption_icon' />}
-        {/* {avatar && <Avatar className="headerOption_icon" src={avatar}/>}  */}
+        {avatar && <Avatar className="headerOption_icon"/>}
         
         <h3 className="headerOption_title">{title}</h3>
     </div>
